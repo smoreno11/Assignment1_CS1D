@@ -12,7 +12,7 @@ using namespace std;
 
 int main()
 {
-	Palindrome answer;
+	Palindrome answer;        //This is an instance of the Palidrome class
 	string name = " ";
 	int wordLength = 0;
 	string newName = "";
