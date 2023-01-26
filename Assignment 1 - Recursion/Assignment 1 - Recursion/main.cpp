@@ -13,12 +13,12 @@ using namespace std;
 int main()
 {
 	Palindrome answer;        //This is an instance of the Palidrome class
-	string name = " ";
-	int wordLength = 0;
-	string newName = "";
-	bool finalAnswer = false;
+	string name = " ";        //IN - Stores the user input 
+	int wordLength = 0;       //CALC - Used to find the length of the word
+	//string newName = "";      //
+	bool finalAnswer = false; // OUT - Determines if the word is a palindrome
 
-	char lowerCase = ' ';
+	//char lowerCase = ' ';
 
 	cout << "/**************************************************************************\n"
 		 << "* Program Description\n"
