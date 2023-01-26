@@ -24,6 +24,21 @@ Palindrome::~Palindrome() {
 
 }
 
+/******************************************************************************
+*FUNCTION - recursivePalindrome
+*______________________________________________________________________________
+*This Function receives the balance array, the size of the array and the
+*menu option that the user has selected
+*______________________________________________________________________________
+*PRE-CONDITIONS
+*	  arrayTolower[]:  Has to be previously defined
+*	  start:           Has to be previously defined
+*	  end:             Has to be previously defined
+*
+*POST-CONDITIONS
+*	   This function will return value to main.
+*
+*******************************************************************************/
 bool Palindrome::recursivePalindrome(char arrayTolower[], int start, int end) {
 	//For this recursive function you need to pass the starting point and the 
 	//ending point - 1 to compare.
@@ -74,8 +89,22 @@ bool Palindrome::recursivePalindrome(char arrayTolower[], int start, int end) {
 	}
 }
 
+/******************************************************************************
+*FUNCTION - convertStringToLower
+*______________________________________________________________________________
+*This Function take the string and turn any capital letter to a lower case
+*______________________________________________________________________________
+*PRE-CONDITIONS
+*	  word:           Has to be previously defined
+*	  arrayToLower[]: Has to be previously defined
+*	  size:           Has to be previously defined
+*
+*POST-CONDITIONS
+*	   This function will return value to main.
+*
+*******************************************************************************/
 void Palindrome::convertStringToLower(std::string word, char arrayTolower[], int size) {
-	char lowerCase = ' ';
+	char lowerCase = ' '; //IN - variable to store the letter that is now lower case
 
 	for (int wordSize = 0; wordSize < size; wordSize++) {
 		lowerCase = tolower(word[wordSize]);
@@ -84,15 +113,30 @@ void Palindrome::convertStringToLower(std::string word, char arrayTolower[], int
 	}
 }
 
-void Palindrome::convertStringToArray(std::string word, int size) {
-	stringSize = size;
-	char* stringToArray = new char(stringSize);
-
-	for (int start = 0; start < size; start++) {
-		stringToArray[start] = word[start];
-	}
-
-	for (int start = 0; start < size; start++) {
-		std::cout << stringToArray[start];
-	}
-}
+/******************************************************************************
+*FUNCTION - convertStringToArray
+*______________________________________________________________________________
+*This Function receives the string from the user input and converts
+* it to an array.
+*______________________________________________________________________________
+*PRE-CONDITIONS
+*	  word:  Has to be previously defined
+*	  size:    Has to be previously defined
+*
+*POST-CONDITIONS
+*	   This function will save the string into an new array.
+*
+*******************************************************************************/
+//void Palindrome::convertStringToArray(std::string word, int size) 
+//{
+//	stringSize = size;  //IN - Holds the value of the string size
+//	char* stringToArray = new char(stringSize);
+//
+//	for (int start = 0; start < size; start++) {
+//		stringToArray[start] = word[start];
+//	}
+//
+//	for (int start = 0; start < size; start++) {
+//		std::cout << stringToArray[start];
+//	}
+//}

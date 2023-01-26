@@ -16,7 +16,7 @@ public:
 	~Palindrome();
 	bool recursivePalindrome(char arrayTolower[], int start, int end);
 	void convertStringToLower(std::string word, char arrayTolower[], int size);
-	void convertStringToArray(std::string word, int size);
+	//void convertStringToArray(std::string word, int size);
 
 private:
 	std::string name;
