@@ -1,0 +1,21 @@
+/**************************************************************************
+* Program Description
+---------------------------------------------------------------------------
+This program takes a work and uses a recursive function to see if the
+word inputed is a Palindrom. It ignores whitespaces, capital letter,and puntuation.
+
+
+
+OUTPUT
+---------------------------------------------------------------------------
+Outputs the word entered and whether it is a palindrome or not.
+**************************************************************************/
+
+
+
+
+Enter a word (exit to quit): no lemon, no melon
+no lemon, no melon is a Palindrome
+
+Enter a word (exit to quit): Was it a cat I saw?
+was it a cat i saw? is a Palindrome

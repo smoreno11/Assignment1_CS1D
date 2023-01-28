@@ -15,10 +15,8 @@ int main()
 	Palindrome answer;        //This is an instance of the Palidrome class
 	string name = " ";        //IN - Stores the user input 
 	int wordLength = 0;       //CALC - Used to find the length of the word
-	//string newName = "";      //
 	bool finalAnswer = false; // OUT - Determines if the word is a palindrome
 
-	//char lowerCase = ' ';
 
 	cout << "/**************************************************************************\n"
 		 << "* Program Description\n"
@@ -34,7 +32,6 @@ int main()
 	cout << "Enter a word (exit to quit): ";
 	getline(cin, name);
 
-
 	wordLength = name.length();
 	
 	char* stringToArray = new char(wordLength);
@@ -45,7 +42,6 @@ int main()
 
 	if (finalAnswer == 1)
 	{
-		//cout << endl;
 		for (int i = 0; i < wordLength; i++)
 			cout << stringToArray[i];
 		cout << " is a Palindrome";
